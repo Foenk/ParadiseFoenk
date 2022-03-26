@@ -468,7 +468,7 @@
 		if((target.stat != DEAD) && damage >= user.dna.species.punchstunthreshold)
 			target.visible_message("<span class='danger'>[user] ослабил[genderize_ru(user.gender,"","а","о","и")] [target]!</span>", \
 							"<span class='userdanger'>[user] ослабил[genderize_ru(user.gender,"","а","о","и")] [target]!</span>")
-			target.apply_effect(2, WEAKEN, armor_block)
+			target.apply_effect(4, WEAKEN, armor_block)
 			target.forcesay(GLOB.hit_appends)
 		else if(target.lying)
 			target.forcesay(GLOB.hit_appends)
